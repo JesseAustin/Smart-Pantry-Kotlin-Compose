@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SmartPantryKotlinCompose" parent="android:Theme.Material.NoActionBar">
+        <!-- This makes the Status Bar transparent so Compose can set the color -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- This ensures the Navigation Bar is also transparent (good practice) -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- Recommended: keeps icons light on a dark background -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+</resources>
