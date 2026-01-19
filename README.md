@@ -1,22 +1,12 @@
-To build this project from GitHub in Android Studio:
+This is the public code for my Android app on Google Play: "Smart Pantry".
 
-Add the project files to an empty project:
--Drag all folders in this repo into your project folder.
+Here you will find: 
 
-Add your app icon (mipmaps):
--Right-click the res folder in Android Studio
--Select New → Image Asset
--In the dropdown, choose Launcher Icons (Adaptive and Legacy)
--Add your own icon(s). This will recreate the mipmap-* folders needed to compile.
+•the kotlin classes I wrote to define and use navigation screens, the inventory item/inventory list data structure, the barcode scanner, permissions, cloud storage functions, alarms, etc.
 
-Set up Firebase:
--Create a new Firebase project in the Firebase Console
--Add an Android app to the project using your app’s package name (different from the one in this repo; you’ll need to update it in the code, e.g., manifest and classes)
--Download the generated google-services.json from firebase console (help: https://firebase.google.com/docs/android/setup#add-config-file)
--Place it in the app/ folder of the project
+•the app's manifest which incorporates all required permissions (camera for barcode scan,.notifications and alarms, internet permission for cloud storage, etc.) while disabling Google's GMS ad tracking permission.
 
-Sync Gradle:
--Click File → Sync Project with Gradle Files to ensure dependencies are loaded
+•my gradle files and my loaded libs.versuons.toml which helps to keep my app/module level gradle clean.
 
-Run the app:
--Build and run the project on an emulator or device
+
+
